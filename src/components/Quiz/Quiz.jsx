@@ -67,7 +67,7 @@ const Quiz = () => {
         return null;
       });
     }
-  };
+  };s
 
 
 const reset =()=> {
