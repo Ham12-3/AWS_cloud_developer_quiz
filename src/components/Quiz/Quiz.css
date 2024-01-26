@@ -6,7 +6,7 @@
     color: #262626;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
     border-radius: 10px;
     padding: 40px 50px;
 }
@@ -33,9 +33,10 @@
     font-size: 20px;
     cursor: pointer;
 }
+
 .container button {
     margin: auto;
-    width:250px;
+    width: 250px;
     height: 65px;
     background: #553f9a;
     color: #fff;
@@ -46,4 +47,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.container .index {
+    margin: auto;
+    font-size: 18px;
+}
