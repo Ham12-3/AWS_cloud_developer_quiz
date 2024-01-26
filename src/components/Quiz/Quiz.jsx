@@ -44,15 +44,15 @@ const Quiz = () => {
       <h1>Quiz App</h1>
       <h1> {score} </h1>
       <hr />
-      <h2>{index + 1}. {questions.question}</h2>
+      <h2>{index}. {questions.question}</h2>
       <ul>
         <li onClick={e => { checkAns(e, 1); disabled }}>{question.option1}</li>
         <li  onClick={e => { checkAns(e, 2); disabled }}>{question.option2}</li>
         <li  onClick={e => { checkAns(e, 3); disabled }}>{question.option3}</li>
         <li  onClick={e => { checkAns(e, 4); disabled }}>{question.option4}</li>
         <div>
-        <button>Previous</button>
-        <button>Next</button>
+        <button onClick={setIndex(--index)}>Previous</button>
+        <button onClick={setIndex(++index)}>Next</button>
         </div>
         
         <div className='index'>
