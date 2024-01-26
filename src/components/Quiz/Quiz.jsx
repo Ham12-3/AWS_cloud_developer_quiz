@@ -19,6 +19,9 @@ const Quiz = () => {
       e.target.classList.add("wrong")
     }
   }
+  const disableOtherButton=(e)=> {
+
+  }
 
 
   // const calculateScore = () => {
@@ -43,10 +46,10 @@ const Quiz = () => {
       <hr />
       <h2>{index + 1}. {questions.question}</h2>
       <ul>
-        <li onClick={e => { checkAns(e, 1) }}>{question.option1}</li>
-        <li onClick={e => { checkAns(e, 2) }}>{question.option2}</li>
-        <li onClick={e => { checkAns(e, 3) }}>{question.option3}</li>
-        <li onClick={e => { checkAns(e, 4) }}>{question.option4}</li>
+        <li onClick={e => { checkAns(e, 1); disabled }}>{question.option1}</li>
+        <li  onClick={e => { checkAns(e, 2); disabled }}>{question.option2}</li>
+        <li  onClick={e => { checkAns(e, 3); disabled }}>{question.option3}</li>
+        <li  onClick={e => { checkAns(e, 4); disabled }}>{question.option4}</li>
         <div>
         <button>Previous</button>
         <button>Next</button>
