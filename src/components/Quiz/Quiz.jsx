@@ -44,7 +44,7 @@ const Quiz = () => {
         <li ref={option1}
           onClick={(e) => {
             checkAns(e, 1);
-            disabled;
+           
           }}
         >
           {question.option1}
@@ -52,7 +52,7 @@ const Quiz = () => {
         <li ref={option2}
           onClick={(e) => {
             checkAns(e, 2);
-            disabled;
+            
           }}
         >
           {question.option2}
@@ -60,7 +60,7 @@ const Quiz = () => {
         <li ref={option3}
           onClick={(e) => {
             checkAns(e, 3);
-            disabled;
+            
           }}
         >
           {question.option3}
@@ -68,7 +68,7 @@ const Quiz = () => {
         <li ref={option4}
           onClick={(e) => {
             checkAns(e, 4);
-            disabled;
+            
           }}
         >
           {question.option4}
