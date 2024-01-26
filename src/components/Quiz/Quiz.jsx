@@ -5,9 +5,10 @@ import { data } from "../../assets/data";
 const Quiz = () => {
   let [index, setIndex] = useState(0);
 
-  let [questions, setQuestions] = useState(data[index]);
+  let [question, setQuestion] = useState(data[index]);
   let [score, setScore] = useState(0);
   let [lock, setLock] = useState(false);
+  
 
   let option1 = useRef(null)
   let option2 = useRef(null)
@@ -21,7 +22,7 @@ const Quiz = () => {
       if (question.ans === ans) {
         e.target.classList.add("correct");
         setLock(true);
-        setScore(score++);
+        setScore(++score)
       } else {
         e.target.classList.add("wrong");
         setLock(true);
@@ -31,6 +32,9 @@ const Quiz = () => {
   };
  
 
+const next=() => {
+
+}
   
   return (
     <div className="container">
@@ -38,7 +42,7 @@ const Quiz = () => {
       <h1> {score} </h1>
       <hr />
       <h2>
-        {index}. {questions.question}
+        {index +1}. {question.question}
       </h2>
       <ul>
         <li ref={option1}
@@ -74,8 +78,8 @@ const Quiz = () => {
           {question.option4}
         </li>
         <div>
-          <button onClick={setIndex(--index)}>Previous</button>
-          <button onClick={setIndex(++index)}>Next</button>
+  
+          <button>Next</button>
         </div>
 
         <div className="index">1 of 5 questions</div>

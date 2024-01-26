@@ -62,3 +62,7 @@
   background: #ffebeb;
   border-color: #ff4a4a;
 }
+
+.container .buttons {
+  display: flex;
+}
