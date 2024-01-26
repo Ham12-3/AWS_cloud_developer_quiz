@@ -1,28 +1,35 @@
-import React, { useState } from 'react'
-import "./Quiz.css"
-import { data } from '../../assets/data'
+import React, { useState,useRef } from "react";
+import "./Quiz.css";
+import { data } from "../../assets/data";
 
 const Quiz = () => {
+  let [index, setIndex] = useState(0);
 
+  let [questions, setQuestions] = useState(data[index]);
+  let [score, setScore] = useState(0);
+  let [lock, setLock] = useState(false);
 
-  let [index, setIndex] = useState(0)
+  let option1 = useRef(null)
+  let option2 = useRef(null)
+  let option3 = useRef(null)
+  let option4 = useRef(null)
 
-  let [questions, setQuestions] = useState(data[index])
-  let [score, setScore] = useState(0)
-
+  let option_array =[option1,option2,option3,option4]
 
   const checkAns = (e, ans) => {
-    if (question.ans === ans) {
-      e.target.classList.add("correct")
-     setScore(score++)
-    } else {
-      e.target.classList.add("wrong")
+    if (lock === false) {
+      if (question.ans === ans) {
+        e.target.classList.add("correct");
+        setLock(true);
+        setScore(score++);
+      } else {
+        e.target.classList.add("wrong");
+        setLock(true);
+        option_array[question.ans-1].current.classList.add("correct")
+      }
     }
-  }
-  const disableOtherButton=(e)=> {
-
-  }
-
+  };
+  const disableOtherButton = (e) => {};
 
   // const calculateScore = () => {
   //   // const incrementScore = num => {
@@ -40,27 +47,55 @@ const Quiz = () => {
   // }
 
   return (
-    <div className='container'>
+    <div className="container">
       <h1>Quiz App</h1>
       <h1> {score} </h1>
       <hr />
-      <h2>{index}. {questions.question}</h2>
+      <h2>
+        {index}. {questions.question}
+      </h2>
       <ul>
-        <li onClick={e => { checkAns(e, 1); disabled }}>{question.option1}</li>
-        <li  onClick={e => { checkAns(e, 2); disabled }}>{question.option2}</li>
-        <li  onClick={e => { checkAns(e, 3); disabled }}>{question.option3}</li>
-        <li  onClick={e => { checkAns(e, 4); disabled }}>{question.option4}</li>
+        <li ref={}
+          onClick={(e) => {
+            checkAns(e, 1);
+            disabled;
+          }}
+        >
+          {question.option1}
+        </li>
+        <li ref={}
+          onClick={(e) => {
+            checkAns(e, 2);
+            disabled;
+          }}
+        >
+          {question.option2}
+        </li>
+        <li ref={}
+          onClick={(e) => {
+            checkAns(e, 3);
+            disabled;
+          }}
+        >
+          {question.option3}
+        </li>
+        <li ref={}
+          onClick={(e) => {
+            checkAns(e, 4);
+            disabled;
+          }}
+        >
+          {question.option4}
+        </li>
         <div>
-        <button onClick={setIndex(--index)}>Previous</button>
-        <button onClick={setIndex(++index)}>Next</button>
+          <button onClick={setIndex(--index)}>Previous</button>
+          <button onClick={setIndex(++index)}>Next</button>
         </div>
-        
-        <div className='index'>
-          1 of 5 questions
-        </div>
+
+        <div className="index">1 of 5 questions</div>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Quiz
+export default Quiz;
