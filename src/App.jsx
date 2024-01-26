@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Quiz from './components/Quiz/Quiz'
 
-import "./index.css"
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +10,7 @@ function App() {
     
     <div>
     <Quiz/>
+
     </div>
   
         

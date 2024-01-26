@@ -29,23 +29,9 @@ const Quiz = () => {
       }
     }
   };
-  const disableOtherButton = (e) => {};
+ 
 
-  // const calculateScore = () => {
-  //   // const incrementScore = num => {
-  //   //   score += num
-  //   //   scoreCounter.innerText = `Score: ${score}`
-
-  //   // }
-
-  //   // const incrementFinal = num => {
-  //   //   finalScore += num
-  //   //   console.log(finalScore)
-
-  //   // }
-
-  // }
-
+  
   return (
     <div className="container">
       <h1>Quiz App</h1>
@@ -55,7 +41,7 @@ const Quiz = () => {
         {index}. {questions.question}
       </h2>
       <ul>
-        <li ref={}
+        <li ref={option1}
           onClick={(e) => {
             checkAns(e, 1);
             disabled;
@@ -63,7 +49,7 @@ const Quiz = () => {
         >
           {question.option1}
         </li>
-        <li ref={}
+        <li ref={option2}
           onClick={(e) => {
             checkAns(e, 2);
             disabled;
@@ -71,7 +57,7 @@ const Quiz = () => {
         >
           {question.option2}
         </li>
-        <li ref={}
+        <li ref={option3}
           onClick={(e) => {
             checkAns(e, 3);
             disabled;
@@ -79,7 +65,7 @@ const Quiz = () => {
         >
           {question.option3}
         </li>
-        <li ref={}
+        <li ref={option4}
           onClick={(e) => {
             checkAns(e, 4);
             disabled;
