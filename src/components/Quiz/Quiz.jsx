@@ -36,16 +36,18 @@ const Quiz = () => {
     if(index >0) {
       setIndex(--index)
       setQuestion(data[index])
-      setLock(false)
+      setLock(true)
     setScore(score)
-    if (question.ans === ans) {
-      e.target.classList.add("correct");
-      setLock(true);
-      setScore((prev) => prev + 1);
-    } else {
-      e.target.classList.add("wrong");
-      setLock(true);
-      option_array[question.ans - 1].current.classList.add("correct");
+    if (lock === true) {
+      if (question.ans === ans) {
+        e.target.classList.add("correct");
+        setLock(true);
+        setScore((prev) => prev + 1);
+      } else {
+        e.target.classList.add("wrong");
+        setLock(true);
+        option_array[question.ans - 1].current.classList.add("correct");
+      }
     }
      
     }
@@ -67,7 +69,7 @@ const Quiz = () => {
         return null;
       });
     }
-  };s
+  };
 
 
 const reset =()=> {
