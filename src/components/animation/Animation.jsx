@@ -79,7 +79,7 @@ const MeterAnimation = ({ value, maxValue }) => {
 
   }, [value, maxValue, progress, displayText, textColor]);
 
-  return <canvas ref={canvasRef} style={{ margin:"auto", width: '300px', height: '300px' }} />;
+  return <canvas ref={canvasRef} style={{ margin:"auto",width: '300px', height: '300px' }} />;
 };
 
 export default MeterAnimation;

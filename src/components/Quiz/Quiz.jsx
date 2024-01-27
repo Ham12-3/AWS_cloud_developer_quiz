@@ -75,7 +75,12 @@ const reset =()=> {
       <hr />
       {result ? (
         <>
-     
+{
+  (score/data.length >= 0.5)? ( <h1>Hello Abdul, keep it upp👍👍👍👍</h1>) :( <h1>Awwn 😔😔😔😔 You can do better</h1>)
+}
+       
+        
+    
 
 
   <MeterAnimation value={score} maxValue={data.length} />    
