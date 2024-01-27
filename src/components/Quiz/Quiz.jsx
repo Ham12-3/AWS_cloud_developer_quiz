@@ -74,8 +74,14 @@ const reset =()=> {
       <hr />
       {result ? (
         <>
-        You scored {score} out of {data.length}
-        <button onClick={()=> reset()}>Reset</button>
+     // ... other Quiz component code
+
+
+  <ScoreAnimation totalScore={score} questionLength={data.length} />
+
+
+// ... other Quiz component code
+
         </>
       ) : (
         <>
