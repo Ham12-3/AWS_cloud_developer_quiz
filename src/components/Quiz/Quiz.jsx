@@ -32,26 +32,7 @@ const Quiz = () => {
   };
 
 
-  const previous=() => {
-    if(index >0) {
-      setIndex(--index)
-      setQuestion(data[index])
-      setLock(true)
-    setScore(score)
-    if (lock === true) {
-      if (question.ans === ans) {
-        e.target.classList.add("correct");
-        setLock(true);
-        setScore((prev) => prev + 1);
-      } else {
-        e.target.classList.add("wrong");
-        setLock(true);
-        option_array[question.ans - 1].current.classList.add("correct");
-      }
-    }
-     
-    }
-  }
+ 
 
 
   const next = () => {
@@ -63,6 +44,7 @@ const Quiz = () => {
       setIndex(++index);
       setQuestion(data[index]);
       setLock(false);
+     
       option_array.map((option) => {
         option.current.classList.remove("wrong");
         option.current.classList.remove("correct");
@@ -129,7 +111,7 @@ const reset =()=> {
               {question.option4}
             </li>
             <div className="buttons">
-              <button onClick={()=> previous()}>Previous</button>
+           
               <button onClick={() => next()}>Next</button>
             </div>
 
