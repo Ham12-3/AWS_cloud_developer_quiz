@@ -42,7 +42,28 @@
   margin: auto;
   width: 250px;
   height: 65px;
-  background: #553f9a;
+  background-image: linear-gradient(
+  90deg,
+  hsl(0deg 11% 4%) 4%,
+  hsl(3deg 17% 4%) 31%,
+  hsl(7deg 20% 5%) 40%,
+  hsl(10deg 23% 6%) 45%,
+  hsl(13deg 25% 6%) 48%,
+  hsl(16deg 27% 7%) 51%,
+  hsl(19deg 29% 7%) 53%,
+  hsl(22deg 30% 7%) 54%,
+  hsl(24deg 32% 8%) 56%,
+  hsl(27deg 33% 8%) 57%,
+  hsl(30deg 34% 8%) 58%,
+  hsl(32deg 34% 8%) 60%,
+  hsl(34deg 35% 9%) 62%,
+  hsl(37deg 35% 9%) 64%,
+  hsl(40deg 35% 9%) 67%,
+  hsl(43deg 34% 9%) 71%,
+  hsl(47deg 34% 9%) 76%,
+  hsl(51deg 32% 9%) 85%,
+  hsl(56deg 31% 10%) 100%
+);
   color: #fff;
   font-size: 25px;
   font-weight: 500;
