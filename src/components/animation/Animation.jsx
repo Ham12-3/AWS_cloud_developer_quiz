@@ -3,18 +3,18 @@ import React, { useEffect, useRef, useState } from 'react';
 const MeterAnimation = ({ value, maxValue }) => {
   const canvasRef = useRef(null);
   const [progress, setProgress] = useState(0);
-  const [displayText, setDisplayText] = useState('');
-  const [textColor, setTextColor] = useState('');
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    const dpi = window.devicePixelRatio || 1;
-    const canvasWidth = 300 * dpi;
-    const canvasHeight = 300 * dpi;
-    canvas.width = canvasWidth;
-    canvas.height = canvasHeight;
-    ctx.scale(dpi, dpi);
+
+    const updateCanvasSize = () => {
+      const dpi = window.devicePixelRatio || 1;
+      const canvasWidth = canvas.clientWidth * dpi;
+      const canvasHeight = canvas.clientHeight * dpi;
+      canvas.width = canvasWidth;
+      canvas.height = canvasHeight;
+    };
 
     const drawMeter = () => {
       const centerX = canvas.width / 2;
@@ -48,51 +48,45 @@ const MeterAnimation = ({ value, maxValue }) => {
       ctx.lineWidth = 20;
       ctx.stroke();
 
-      // Set text content based on value / maxValue
-      if (value / maxValue < 0.5) {
-        setDisplayText('Pass');
-        setTextColor('darkred');
-      } else if (value / maxValue === 0.5) {
-        setDisplayText('Merit');
-        setTextColor('darkyellow');
-      } else {
-        setDisplayText('Distinction');
-        setTextColor('darkgreen');
-      }
-
       // Draw text
+      const displayText = value / maxValue < 0.5 ? 'Pass' : value / maxValue === 0.5 ? 'Merit' : 'Distinction';
       ctx.font = 'bold 30px Poppins';
-      ctx.fillStyle = textColor;
+      ctx.fillStyle = animationColor; // Use the same color for text
       ctx.textAlign = 'center';
       ctx.fillText(displayText, centerX, centerY + 40);
     };
 
-    const animateProgress = () => {
-      let start = null;
-      let duration = 1000; // Default animation duration in milliseconds
+    updateCanvasSize();
+    drawMeter();
 
-      // Adjust animation duration based on device screen size
-      if (window.innerWidth < 768) {
-        duration = 2000; // For mobile devices
-      } else if (window.innerWidth < 1024) {
-        duration = 1500; // For tablet devices
+  }, [value, maxValue, progress]);
+
+  // Update progress on value or maxValue change
+  useEffect(() => {
+    const animationDuration = 1000; // Animation duration in milliseconds
+
+    let startTimestamp;
+    let animationFrameId;
+
+    const animateProgress = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+      const progress = Math.min(elapsed / animationDuration, 1);
+      setProgress(progress);
+
+      if (progress < 1) {
+        animationFrameId = requestAnimationFrame(animateProgress);
       }
-
-      const step = (timestamp) => {
-        if (!start) start = timestamp;
-        const progress = Math.min((timestamp - start) / duration, 1); // Ensure progress is capped at 1
-        setProgress(progress * (value / maxValue)); // Update progress based on value
-        if (progress < 1) requestAnimationFrame(step);
-      };
-
-      requestAnimationFrame(step);
     };
 
-    animateProgress();
+    animationFrameId = requestAnimationFrame(animateProgress);
 
-  }, [value, maxValue]); // Removed progress, displayText, and textColor from dependency array
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [value, maxValue]);
 
-  return <canvas ref={canvasRef} style={{ margin:"auto",width: '300px', height: '300px' }} />;
+  return <canvas ref={canvasRef} style={{ margin: 'auto', display: 'block', width: '100%', height: '300px' }} />;
 };
 
 export default MeterAnimation;

@@ -44,7 +44,6 @@
   margin: auto;
   width: 100%; /* Make button width 100% for better responsiveness */
   max-width: 250px; /* Set a maximum width for the button */
-  
   height: 65px;
   background-image: linear-gradient(
   90deg,
@@ -96,19 +95,16 @@
   display: flex;
 }
 
-
-
 @media only screen and (max-width: 768px) {
   .container {
-    margin-top: 100px; /* Adjust margin-top for smaller screens */
-    padding: 40px 10px; /* Adjust padding for smaller screens */
+    margin-top: 100px !important; /* Adjust margin-top for smaller screens */
+    padding: 40px 10px !important; /* Adjust padding for smaller screens */
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container {
-    margin-top: 80px; /* Further adjust margin-top for even smaller screens */
-    padding: 40px 5px; /* Further adjust padding for even smaller screens */
+    margin-top: 80px !important; /* Further adjust margin-top for even smaller screens */
+    padding: 40px 5px !important; /* Further adjust padding for even smaller screens */
   }
 }
-
