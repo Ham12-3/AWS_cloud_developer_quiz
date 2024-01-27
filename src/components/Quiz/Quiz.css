@@ -1,16 +1,16 @@
 .container {
-  width: 90%; /* Set width to 90% for better responsiveness */
-  max-width: 640px; /* Set a maximum width */
+  width: 90%;
+  max-width: 640px;
   margin: auto;
   margin-top: 150px;
-  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for transparency */
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   color: #262626;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 10px;
-  padding: 40px 5%; /* Set padding to 5% for better responsiveness */
+  padding: 40px 5%;
 }
 
 .container hr {
@@ -18,6 +18,7 @@
   border: none;
   background: #707070;
 }
+
 .container .head {
   display: flex;
   justify-content: space-between;
@@ -41,32 +42,31 @@
 }
 
 .container button {
-  margin: auto;
-  width: 100%; /* Make button width 100% for better responsiveness */
-  max-width: 250px; /* Set a maximum width for the button */
+  width: 100%;
+  max-width: 250px;
   height: 65px;
   background-image: linear-gradient(
-  90deg,
-  hsl(0deg 11% 4%) 4%,
-  hsl(3deg 17% 4%) 31%,
-  hsl(7deg 20% 5%) 40%,
-  hsl(10deg 23% 6%) 45%,
-  hsl(13deg 25% 6%) 48%,
-  hsl(16deg 27% 7%) 51%,
-  hsl(19deg 29% 7%) 53%,
-  hsl(22deg 30% 7%) 54%,
-  hsl(24deg 32% 8%) 56%,
-  hsl(27deg 33% 8%) 57%,
-  hsl(30deg 34% 8%) 58%,
-  hsl(32deg 34% 8%) 60%,
-  hsl(34deg 35% 9%) 62%,
-  hsl(37deg 35% 9%) 64%,
-  hsl(40deg 35% 9%) 67%,
-  hsl(43deg 34% 9%) 71%,
-  hsl(47deg 34% 9%) 76%,
-  hsl(51deg 32% 9%) 85%,
-  hsl(56deg 31% 10%) 100%
-);
+    90deg,
+    hsl(0deg 11% 4%) 4%,
+    hsl(3deg 17% 4%) 31%,
+    hsl(7deg 20% 5%) 40%,
+    hsl(10deg 23% 6%) 45%,
+    hsl(13deg 25% 6%) 48%,
+    hsl(16deg 27% 7%) 51%,
+    hsl(19deg 29% 7%) 53%,
+    hsl(22deg 30% 7%) 54%,
+    hsl(24deg 32% 8%) 56%,
+    hsl(27deg 33% 8%) 57%,
+    hsl(30deg 34% 8%) 58%,
+    hsl(32deg 34% 8%) 60%,
+    hsl(34deg 35% 9%) 62%,
+    hsl(37deg 35% 9%) 64%,
+    hsl(40deg 35% 9%) 67%,
+    hsl(43deg 34% 9%) 71%,
+    hsl(47deg 34% 9%) 76%,
+    hsl(51deg 32% 9%) 85%,
+    hsl(56deg 31% 10%) 100%
+  );
   color: #fff;
   font-size: 25px;
   font-weight: 500;
@@ -86,6 +86,7 @@
   background: #dffff2;
   border-color: #00d397;
 }
+
 .container .wrong {
   background: #ffebeb;
   border-color: #ff4a4a;
@@ -97,14 +98,14 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin-top: 100px !important; /* Adjust margin-top for smaller screens */
-    padding: 40px 10px !important; /* Adjust padding for smaller screens */
+    margin-top: 100px;
+    padding: 40px 10px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container {
-    margin-top: 80px !important; /* Further adjust margin-top for even smaller screens */
-    padding: 40px 5px !important; /* Further adjust padding for even smaller screens */
+    margin-top: 80px;
+    padding: 40px 5px;
   }
 }
