@@ -1,21 +1,23 @@
-import { useState } from 'react'
-import Quiz from './components/Quiz/Quiz'
+import React, { useState } from "react";
+import Quiz from "./components/Quiz/Quiz";
+import WelcomeDialog from "./components/welcomeDialog/WelcomeDialog";
 
+const App = () => {
+  const [userName, setUserName] = useState(localStorage.getItem("userName"));
 
-
-function App() {
-  const [count, setCount] = useState(0)
+  const handleNameSubmit = (name) => {
+    setUserName(name);
+  };
 
   return (
-    
     <div>
-    <Quiz/>
-
+      {userName ? (
+        <Quiz userName={userName} />
+      ) : (
+        <WelcomeDialog onNameSubmit={handleNameSubmit} />
+      )}
     </div>
-  
-        
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

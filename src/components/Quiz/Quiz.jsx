@@ -3,7 +3,8 @@ import "./Quiz.css";
 import { data } from "../../assets/data";
 import MeterAnimation from "../animation/Animation";
 
-const Quiz = () => {
+const Quiz = ({ userName }) => {
+  const [name, setName] = useState(userName || "");
   const [index, setIndex] = useState(() => {
     const savedIndex = localStorage.getItem('quizIndex');
     return savedIndex !== null ? parseInt(savedIndex) : 0;
@@ -69,72 +70,76 @@ const Quiz = () => {
     setLock(false);
     setResult(false);
   };
-  
+
   return (
     <div className="container">
-      <div className="head">
-        <h1>Quiz App</h1>
-        <h1>Score: {score} </h1>
-      </div>
-      
-      <hr />
-      {result ? (
+      {name !== "" && (
         <>
-          {score / data.length >= 0.5 ? (
-            <h1>Hello Abdul, keep it upp👍👍👍👍</h1>
+          <div className="head">
+            <h1>Quiz App {name}</h1>
+            <h1>Score: {score} </h1>
+          </div>
+
+          <hr />
+          {result ? (
+            <>
+              {score / data.length >= 0.5 ? (
+                <h1>Hello {name}, keep it upp👍👍👍👍</h1>
+              ) : (
+                <h1>Awwn 😔😔😔😔 You can do better</h1>
+              )}
+
+              <MeterAnimation value={score} maxValue={data.length} />
+              <button onClick={reset}>Reset</button>
+            </>
           ) : (
-            <h1>Awwn 😔😔😔😔 You can do better</h1>
+            <>
+              <h2>
+                {index + 1}. {question.question}
+              </h2>
+              <ul>
+                <li
+                  ref={option1}
+                  onClick={(e) => {
+                    checkAns(e, 1);
+                  }}
+                >
+                  {question.option1}
+                </li>
+                <li
+                  ref={option2}
+                  onClick={(e) => {
+                    checkAns(e, 2);
+                  }}
+                >
+                  {question.option2}
+                </li>
+                <li
+                  ref={option3}
+                  onClick={(e) => {
+                    checkAns(e, 3);
+                  }}
+                >
+                  {question.option3}
+                </li>
+                <li
+                  ref={option4}
+                  onClick={(e) => {
+                    checkAns(e, 4);
+                  }}
+                >
+                  {question.option4}
+                </li>
+                <div className="buttons">
+                  <button onClick={next}>Next</button>
+                </div>
+
+                <div className="index">
+                  {index + 1} of {data.length} questions
+                </div>
+              </ul>
+            </>
           )}
-          
-          <MeterAnimation value={score} maxValue={data.length} />
-          <button onClick={reset}>Reset</button>
-        </>
-      ) : (
-        <>
-          <h2>
-            {index + 1}. {question.question}
-          </h2>
-          <ul>
-            <li
-              ref={option1}
-              onClick={(e) => {
-                checkAns(e, 1);
-              }}
-            >
-              {question.option1}
-            </li>
-            <li
-              ref={option2}
-              onClick={(e) => {
-                checkAns(e, 2);
-              }}
-            >
-              {question.option2}
-            </li>
-            <li
-              ref={option3}
-              onClick={(e) => {
-                checkAns(e, 3);
-              }}
-            >
-              {question.option3}
-            </li>
-            <li
-              ref={option4}
-              onClick={(e) => {
-                checkAns(e, 4);
-              }}
-            >
-              {question.option4}
-            </li>
-            <div className="buttons">
-              <button onClick={next}>Next</button>
-            </div>
-            
-            <div className="index">
-              {index + 1} of {data.length} questions
-            </div>
-          </ul>
         </>
       )}
     </div>
