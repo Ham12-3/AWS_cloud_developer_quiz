@@ -16,6 +16,10 @@
   border: none;
   background: #707070;
 }
+.container .head {
+  display: flex;
+  justify-content: space-between;
+}
 
 .container h2 {
   font-size: 27px;

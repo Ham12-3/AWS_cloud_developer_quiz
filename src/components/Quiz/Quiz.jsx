@@ -66,8 +66,11 @@ const reset =()=> {
 
   return (
     <div className="container">
+      <div className="head">
       <h1>Quiz App</h1>
-      <h1> {score} </h1>
+      <h1>Score: {score} </h1>
+      </div>
+    
       <hr />
       {result ? (
         <>
