@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const MeterAnimation = ({ value, maxValue }) => {
   const canvasRef = useRef(null);
   const [progress, setProgress] = useState(0);
-  const animationSpeed = 0.02;
+  const [animationColor, setAnimationColor] = useState('green');
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -28,14 +28,23 @@ const MeterAnimation = ({ value, maxValue }) => {
       // Draw progress arc
       ctx.beginPath();
       ctx.arc(centerX, centerY, radius, Math.PI * 0.75, Math.PI * (0.75 + progress * 1.5), false);
-      ctx.strokeStyle = 'green';
+      ctx.strokeStyle = animationColor;
       ctx.lineWidth = 20;
       ctx.stroke();
     };
 
     const updateAnimation = () => {
       if (progress < value / maxValue) {
-        setProgress((prevProgress) => Math.min(prevProgress + animationSpeed, value / maxValue));
+        setProgress((prevProgress) => Math.min(prevProgress + 0.02, value / maxValue));
+      }
+
+      // Set animation color based on value / maxValue
+      if (value / maxValue === 0.5) {
+        setAnimationColor('yellow');
+      } else if (value / maxValue < 0.5) {
+        setAnimationColor('red');
+      } else {
+        setAnimationColor('green');
       }
 
       drawMeter();
@@ -48,7 +57,7 @@ const MeterAnimation = ({ value, maxValue }) => {
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, [value, maxValue, progress]);
+  }, [value, maxValue, progress, animationColor]);
 
   return <canvas ref={canvasRef} width={200} height={200} />;
 };
