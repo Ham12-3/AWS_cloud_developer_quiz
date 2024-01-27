@@ -1,49 +1,56 @@
-import React, { useEffect, useRef } from 'react';
-import * as d3 from 'd3';
-import { Canvas } from 'react-three-fiber';
-import { useFrame } from 'react-three-fiber';
+import React, { useEffect, useRef, useState } from 'react';
 
-function ScoreAnimation({ totalScore, questionLength }) {
-  const canvasRef = useRef();
-  const [gaugeProgress, setGaugeProgress] = useState(0);
+const MeterAnimation = ({ value, maxValue }) => {
+  const canvasRef = useRef(null);
+  const [progress, setProgress] = useState(0);
+  const animationSpeed = 0.02;
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 5;
+    const ctx = canvas.getContext('2d');
+    let animationId;
 
-    const arcContainer = document.createElement('div');
-    canvas.appendChild(arcContainer);
+    const drawMeter = () => {
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      const radius = Math.min(centerX, centerY) - 20;
 
-    const arc = d3
-      .select(arcContainer)
-      .append('svg')
-      .append('path')
-      .attr('d', `M 0,0 A 1,1 0 1 1 0,0`) // Initial empty arc
-      .attr('stroke-width', 15)
-      .attr('stroke', 'green') // Adjust color based on score
-      .attr('fill', 'none');
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const percentageScore = (totalScore / questionLength) * 100;
-    const gaugeAngle = (percentageScore / 100) * 360;
+      // Draw meter scale
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, Math.PI * 0.75, Math.PI * 2.25, false);
+      ctx.strokeStyle = '#ddd';
+      ctx.lineWidth = 20;
+      ctx.stroke();
 
-    // Animate gauge filling up gradually
-    useFrame(() => {
-      setGaugeProgress((prevProgress) => Math.min(prevProgress + 0.05, 1)); // Adjust animation speed
-      const currentAngle = gaugeAngle * gaugeProgress;
-      arc.attr('d', `M 0,0 A 1,1 0 1 1 ${currentAngle},0`);
-    });
+      // Draw progress arc
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, radius, Math.PI * 0.75, Math.PI * (0.75 + progress * 1.5), false);
+      ctx.strokeStyle = 'green';
+      ctx.lineWidth = 20;
+      ctx.stroke();
+    };
 
-    // Create circular gauge geometry in Three.js
-    const gaugeGeometry = new THREE.CircleGeometry(1, 32);
-    const gaugeMaterial = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load(arcContainer) });
-    const gaugeMesh = new THREE.Mesh(gaugeGeometry, gaugeMaterial);
-    scene.add(gaugeMesh);
+    const updateAnimation = () => {
+      if (progress < value / maxValue) {
+        setProgress((prevProgress) => Math.min(prevProgress + animationSpeed, value / maxValue));
+      }
 
-    // Add to canvas
-    canvas.appendChild(scene.getObject3D('canvas'));
-  }, []);
+      drawMeter();
 
-  return <Canvas ref={canvasRef} />;
-}
+      animationId = requestAnimationFrame(updateAnimation);
+    };
+
+    updateAnimation();
+
+    return () => {
+      cancelAnimationFrame(animationId);
+    };
+  }, [value, maxValue, progress]);
+
+  return <canvas ref={canvasRef} width={200} height={200} />;
+};
+
+export default MeterAnimation;

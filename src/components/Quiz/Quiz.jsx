@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Quiz.css";
 import { data } from "../../assets/data";
+import MeterAnimation from "../animation/Animation"
 
 const Quiz = () => {
   let [index, setIndex] = useState(0);
@@ -74,13 +75,14 @@ const reset =()=> {
       <hr />
       {result ? (
         <>
-     // ... other Quiz component code
+     
 
 
-  <ScoreAnimation totalScore={score} questionLength={data.length} />
+  <MeterAnimation value={score} maxValue={data.length} />    
+  <button onClick={()=> reset()}>Reset</button>
 
 
-// ... other Quiz component code
+
 
         </>
       ) : (

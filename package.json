@@ -14,7 +14,9 @@
     "d3": "^7.8.5",
     "react": "^18.2.0",
     "react-d3-library": "^1.1.8",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-three-fiber": "^6.0.13",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
