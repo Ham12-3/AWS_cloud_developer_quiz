@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Quiz.css";
 import { data } from "../../assets/data";
-import MeterAnimation from "../animation/Animation"
+import MeterAnimation from "../animation/Animation";
 
 const Quiz = () => {
   let [index, setIndex] = useState(0);
@@ -32,10 +32,6 @@ const Quiz = () => {
     }
   };
 
-
-
-
-
   const next = () => {
     if (index === data.length - 1) {
       setResult(true);
@@ -45,7 +41,7 @@ const Quiz = () => {
       setIndex(++index);
       setQuestion(data[index]);
       setLock(false);
-     
+
       option_array.map((option) => {
         option.current.classList.remove("wrong");
         option.current.classList.remove("correct");
@@ -54,41 +50,32 @@ const Quiz = () => {
     }
   };
 
-
-const reset =()=> {
-  setIndex(0)
-  setQuestion(data[0])
-  setScore(0)
-  setLock(false)
-  setResult(false)
-}
-
-
+  const reset = () => {
+    setIndex(0);
+    setQuestion(data[0]);
+    setScore(0);
+    setLock(false);
+    setResult(false);
+  };
 
   return (
     <div className="container">
       <div className="head">
-      <h1>Quiz App</h1>
-      <h1>Score: {score} </h1>
+        <h1>Quiz App</h1>
+        <h1>Score: {score} </h1>
       </div>
-    
+
       <hr />
       {result ? (
         <>
-{
-  (score/data.length >= 0.5)? ( <h1>Hello Abdul, keep it upp👍👍👍👍</h1>) :( <h1>Awwn 😔😔😔😔 You can do better</h1>)
-}
-       
-        
-    
+          {score / data.length >= 0.5 ? (
+            <h1>Hello Abdul, keep it upp👍👍👍👍</h1>
+          ) : (
+            <h1>Awwn 😔😔😔😔 You can do better</h1>
+          )}
 
-
-  <MeterAnimation value={score} maxValue={data.length} />    
-  <button onClick={()=> reset()}>Reset</button>
-
-
-
-
+          <MeterAnimation value={score} maxValue={data.length} />
+          <button onClick={() => reset()}>Reset</button>
         </>
       ) : (
         <>
@@ -129,7 +116,6 @@ const reset =()=> {
               {question.option4}
             </li>
             <div className="buttons">
-             
               <button onClick={() => next()}>Next</button>
             </div>
 

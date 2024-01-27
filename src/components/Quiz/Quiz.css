@@ -2,7 +2,8 @@
   width: 640px;
   margin: auto;
   margin-top: 150px;
-  background: white;
+  background-color: rgb(255, 255, 255,0.9); /* Adjust the alpha value for transparency */
+  backdrop-filter: blur(10px);
   color: #262626;
   display: flex;
   flex-direction: column;
