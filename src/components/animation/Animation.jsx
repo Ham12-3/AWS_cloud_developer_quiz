@@ -50,7 +50,7 @@ const MeterAnimation = ({ value, maxValue }) => {
 
       // Draw text
       const displayText = value / maxValue < 0.5 ? 'Pass' : value / maxValue === 0.5 ? 'Merit' : 'Distinction';
-      ctx.font = 'bold 30px Poppins';
+      ctx.font = 'bold 40px Poppins';
       ctx.fillStyle = animationColor; // Use the same color for text
       ctx.textAlign = 'center';
       ctx.fillText(displayText, centerX, centerY + 40);
