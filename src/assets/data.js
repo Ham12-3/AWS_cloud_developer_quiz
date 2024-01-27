@@ -39,4 +39,12 @@ export const data = [
     option4: "Pen Drive",
     ans: 2,
   },
+  {
+    question: "First page of Website is termed as?",
+    option1: "Index Page",
+    option2: "Homepage",
+    option3: "Sitemap",
+    option4: "Pen Drive",
+    ans: 2,
+  },
 ];

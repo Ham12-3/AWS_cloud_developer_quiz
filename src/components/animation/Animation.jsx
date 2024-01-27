@@ -36,7 +36,7 @@ const MeterAnimation = ({ value, maxValue }) => {
       if (value / maxValue < 0.5) {
         animationColor = 'darkred';
       } else if (value / maxValue === 0.5) {
-        animationColor = 'darkyellow';
+        animationColor = '#8B8000';
       } else {
         animationColor = 'darkgreen';
       }
@@ -67,17 +67,30 @@ const MeterAnimation = ({ value, maxValue }) => {
       ctx.fillText(displayText, centerX, centerY + 40);
     };
 
-    const updateAnimation = () => {
-      if (progress < value / maxValue) {
-        setProgress((prevProgress) => Math.min(prevProgress + 0.02, value / maxValue));
+    const animateProgress = () => {
+      let start = null;
+      let duration = 1000; // Default animation duration in milliseconds
+
+      // Adjust animation duration based on device screen size
+      if (window.innerWidth < 768) {
+        duration = 2000; // For mobile devices
+      } else if (window.innerWidth < 1024) {
+        duration = 1500; // For tablet devices
       }
 
-      drawMeter();
+      const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1); // Ensure progress is capped at 1
+        setProgress(progress * (value / maxValue)); // Update progress based on value
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
     };
 
-    updateAnimation();
+    animateProgress();
 
-  }, [value, maxValue, progress, displayText, textColor]);
+  }, [value, maxValue]); // Removed progress, displayText, and textColor from dependency array
 
   return <canvas ref={canvasRef} style={{ margin:"auto",width: '300px', height: '300px' }} />;
 };
