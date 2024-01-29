@@ -136,9 +136,7 @@ const Quiz = ({ userName }) => {
                   <button onClick={next}>Next</button>
                 </div>
 
-                <div className="index">
-                  {index + 1} of {data.length} questions
-                </div>
+                
               </ul>
             </>
           )}
