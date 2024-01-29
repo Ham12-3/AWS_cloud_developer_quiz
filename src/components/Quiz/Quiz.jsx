@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Quiz.css";
 import { data } from "../../assets/data";
 import MeterAnimation from "../animation/Animation";
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 const Quiz = ({ userName }) => {
   const [name, setName] = useState(userName || "");
@@ -94,6 +95,7 @@ const Quiz = ({ userName }) => {
             </>
           ) : (
             <>
+             <ProgressBar index={index} total={data.length} />
               <h2>
                 {index + 1}. {question.question}
               </h2>
