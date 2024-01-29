@@ -1,10 +1,17 @@
-
-
-
 export const data = [
-   
- {
-    question: "Your organization is planning to implement a data lake solution for storing and analyzing large volumes of data. Which AWS service should you use to collect, store, and analyze diverse datasets at scale?",
+  {
+    question:
+      "Your company is planning to deploy a new web application that requires secure and scalable authentication for users. Which AWS service should you use to authenticate users and manage user identities securely?",
+    option1: "Amazon Cognito",
+    option2: "AWS IAM",
+    option3: "Amazon API Gateway",
+    option4: "Amazon SNS",
+    ans: 1,
+  },
+
+  {
+    question:
+      "Your organization is planning to implement a data lake solution for storing and analyzing large volumes of data. Which AWS service should you use to collect, store, and analyze diverse datasets at scale?",
     option1: "Amazon Athena",
     option2: "Amazon S3",
     option3: "Amazon Redshift",
@@ -12,7 +19,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "You are developing a serverless web application that requires real-time communication between clients and servers. Which AWS service should you use to establish WebSocket connections and handle bi-directional communication?",
+    question:
+      "You are developing a serverless web application that requires real-time communication between clients and servers. Which AWS service should you use to establish WebSocket connections and handle bi-directional communication?",
     option1: "Amazon API Gateway",
     option2: "Amazon SNS",
     option3: "Amazon SQS",
@@ -20,7 +28,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "Your team is building a machine learning model that requires large-scale training datasets. Which AWS service should you use to create, manage, and scale distributed training jobs?",
+    question:
+      "Your team is building a machine learning model that requires large-scale training datasets. Which AWS service should you use to create, manage, and scale distributed training jobs?",
     option1: "Amazon SageMaker",
     option2: "Amazon Rekognition",
     option3: "Amazon Polly",
@@ -28,7 +37,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a mobile application that requires offline data synchronization capabilities. Which AWS service should you use to synchronize data between mobile devices and the cloud?",
+    question:
+      "You are developing a mobile application that requires offline data synchronization capabilities. Which AWS service should you use to synchronize data between mobile devices and the cloud?",
     option1: "Amazon Cognito",
     option2: "Amazon SNS",
     option3: "Amazon SQS",
@@ -36,7 +46,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization needs to process and analyze real-time data streams from IoT devices. Which AWS service should you use to ingest, process, and analyze streaming data in real-time?",
+    question:
+      "Your organization needs to process and analyze real-time data streams from IoT devices. Which AWS service should you use to ingest, process, and analyze streaming data in real-time?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon Athena",
@@ -44,7 +55,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a microservices architecture for your cloud-based application. Which AWS service should you use to manage and orchestrate containers at scale?",
+    question:
+      "You are designing a microservices architecture for your cloud-based application. Which AWS service should you use to manage and orchestrate containers at scale?",
     option1: "Amazon ECS",
     option2: "Amazon EKS",
     option3: "Amazon RDS",
@@ -52,7 +64,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your company wants to automate the deployment of infrastructure resources using code. Which AWS service should you use to define and provision AWS infrastructure as code?",
+    question:
+      "Your company wants to automate the deployment of infrastructure resources using code. Which AWS service should you use to define and provision AWS infrastructure as code?",
     option1: "AWS CloudFormation",
     option2: "Amazon ECS",
     option3: "Amazon EKS",
@@ -60,7 +73,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a serverless application that requires long-running tasks to be executed asynchronously. Which AWS service should you use to decouple application components and trigger background tasks?",
+    question:
+      "You are developing a serverless application that requires long-running tasks to be executed asynchronously. Which AWS service should you use to decouple application components and trigger background tasks?",
     option1: "Amazon SQS",
     option2: "Amazon SNS",
     option3: "AWS Step Functions",
@@ -68,7 +82,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "Your organization is planning to build a real-time analytics platform for monitoring business metrics. Which AWS service should you use to collect, process, and visualize streaming data in real-time?",
+    question:
+      "Your organization is planning to build a real-time analytics platform for monitoring business metrics. Which AWS service should you use to collect, process, and visualize streaming data in real-time?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon Athena",
@@ -76,15 +91,17 @@ export const data = [
     ans: 4,
   },
   {
-    question: "You are developing a mobile gaming application that requires real-time leaderboards and player rankings. Which AWS service should you use to store and update real-time data with low latency?",
+    question:
+      "You are developing a mobile gaming application that requires real-time leaderboards and player rankings. Which AWS service should you use to store and update real-time data with low latency?",
     option1: "Amazon DynamoDB",
     option2: "Amazon RDS",
     option3: "Amazon S3",
     option4: "Amazon ElastiCache",
     ans: 1,
   },
-   {
-    question: "Your company is planning to implement a centralized authentication and authorization system for its applications. Which AWS service should you use to manage user identities and access control centrally?",
+  {
+    question:
+      "Your company is planning to implement a centralized authentication and authorization system for its applications. Which AWS service should you use to manage user identities and access control centrally?",
     option1: "Amazon Cognito",
     option2: "AWS IAM",
     option3: "Amazon RDS",
@@ -92,7 +109,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "You are developing a web application that requires real-time monitoring and troubleshooting capabilities. Which AWS service should you use to collect, visualize, and analyze operational data from multiple sources?",
+    question:
+      "You are developing a web application that requires real-time monitoring and troubleshooting capabilities. Which AWS service should you use to collect, visualize, and analyze operational data from multiple sources?",
     option1: "Amazon CloudWatch",
     option2: "Amazon S3",
     option3: "Amazon Redshift",
@@ -100,7 +118,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization needs to securely store and manage encryption keys for its applications. Which AWS service should you use to create and control access to encryption keys?",
+    question:
+      "Your organization needs to securely store and manage encryption keys for its applications. Which AWS service should you use to create and control access to encryption keys?",
     option1: "AWS KMS",
     option2: "Amazon CloudHSM",
     option3: "Amazon S3",
@@ -108,7 +127,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a serverless data processing pipeline that requires scalable and cost-effective storage. Which AWS service should you use to store and analyze large datasets?",
+    question:
+      "You are designing a serverless data processing pipeline that requires scalable and cost-effective storage. Which AWS service should you use to store and analyze large datasets?",
     option1: "Amazon S3",
     option2: "Amazon RDS",
     option3: "Amazon DynamoDB",
@@ -116,7 +136,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is building a mobile application that requires offline data synchronization capabilities. Which AWS service should you use to synchronize data between mobile devices and the cloud?",
+    question:
+      "Your team is building a mobile application that requires offline data synchronization capabilities. Which AWS service should you use to synchronize data between mobile devices and the cloud?",
     option1: "Amazon Cognito",
     option2: "Amazon SNS",
     option3: "Amazon SQS",
@@ -124,7 +145,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization needs to process large volumes of data from multiple sources for business analytics. Which AWS service should you use to perform ad-hoc queries and analysis on data stored in Amazon S3?",
+    question:
+      "Your organization needs to process large volumes of data from multiple sources for business analytics. Which AWS service should you use to perform ad-hoc queries and analysis on data stored in Amazon S3?",
     option1: "Amazon Athena",
     option2: "Amazon Redshift",
     option3: "Amazon RDS",
@@ -132,7 +154,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a serverless application that requires long-running tasks to be executed asynchronously. Which AWS service should you use to decouple application components and trigger background tasks?",
+    question:
+      "You are developing a serverless application that requires long-running tasks to be executed asynchronously. Which AWS service should you use to decouple application components and trigger background tasks?",
     option1: "Amazon SQS",
     option2: "Amazon SNS",
     option3: "AWS Step Functions",
@@ -140,7 +163,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is building a microservices-based application that requires secure communication between services. Which AWS service should you use to create private network connections between services?",
+    question:
+      "Your team is building a microservices-based application that requires secure communication between services. Which AWS service should you use to create private network connections between services?",
     option1: "Amazon VPC",
     option2: "Amazon Route 53",
     option3: "Amazon CloudFront",
@@ -148,7 +172,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a disaster recovery solution for your organization's critical workloads. Which AWS service should you use to automate the backup and recovery of data stored in Amazon S3?",
+    question:
+      "You are designing a disaster recovery solution for your organization's critical workloads. Which AWS service should you use to automate the backup and recovery of data stored in Amazon S3?",
     option1: "Amazon S3 Glacier",
     option2: "AWS Backup",
     option3: "AWS Snowball",
@@ -156,7 +181,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your company wants to build a data analytics platform that requires real-time processing of streaming data. Which AWS service should you use to analyze streaming data in real-time and trigger actions based on insights?",
+    question:
+      "Your company wants to build a data analytics platform that requires real-time processing of streaming data. Which AWS service should you use to analyze streaming data in real-time and trigger actions based on insights?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon Athena",
@@ -164,7 +190,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your company is planning to deploy a new video streaming platform that requires low-latency delivery of high-quality video content to viewers worldwide. Which AWS service should you use to deliver video content with minimal delay?",
+    question:
+      "Your company is planning to deploy a new video streaming platform that requires low-latency delivery of high-quality video content to viewers worldwide. Which AWS service should you use to deliver video content with minimal delay?",
     option1: "Amazon CloudFront",
     option2: "Amazon S3",
     option3: "Amazon Kinesis",
@@ -172,7 +199,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is developing a real-time analytics dashboard for monitoring website traffic. Which AWS service should you use to collect and analyze clickstream data in real-time?",
+    question:
+      "Your team is developing a real-time analytics dashboard for monitoring website traffic. Which AWS service should you use to collect and analyze clickstream data in real-time?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon RDS",
@@ -180,7 +208,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a data archival solution for your organization's historical records. Which AWS service should you use to store data securely for long-term retention?",
+    question:
+      "You are designing a data archival solution for your organization's historical records. Which AWS service should you use to store data securely for long-term retention?",
     option1: "Amazon S3 Glacier",
     option2: "Amazon RDS",
     option3: "Amazon DynamoDB",
@@ -188,7 +217,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization needs to build a scalable and fault-tolerant data warehouse solution for business analytics. Which AWS service should you use to analyze large datasets with high performance and scalability?",
+    question:
+      "Your organization needs to build a scalable and fault-tolerant data warehouse solution for business analytics. Which AWS service should you use to analyze large datasets with high performance and scalability?",
     option1: "Amazon Redshift",
     option2: "Amazon Athena",
     option3: "Amazon RDS",
@@ -196,7 +226,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a chatbot application that requires natural language understanding and processing. Which AWS service should you use to build conversational interfaces with advanced AI capabilities?",
+    question:
+      "You are developing a chatbot application that requires natural language understanding and processing. Which AWS service should you use to build conversational interfaces with advanced AI capabilities?",
     option1: "Amazon Lex",
     option2: "Amazon Polly",
     option3: "Amazon Rekognition",
@@ -204,7 +235,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is building a data lake solution for storing and analyzing large volumes of structured and unstructured data. Which AWS service should you use to catalog and discover datasets stored in different formats?",
+    question:
+      "Your team is building a data lake solution for storing and analyzing large volumes of structured and unstructured data. Which AWS service should you use to catalog and discover datasets stored in different formats?",
     option1: "AWS Glue",
     option2: "Amazon Redshift",
     option3: "Amazon S3",
@@ -212,7 +244,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your company wants to automate the deployment of infrastructure resources using code. Which AWS service should you use to define and provision AWS infrastructure as code?",
+    question:
+      "Your company wants to automate the deployment of infrastructure resources using code. Which AWS service should you use to define and provision AWS infrastructure as code?",
     option1: "AWS CloudFormation",
     option2: "Amazon ECS",
     option3: "Amazon EKS",
@@ -220,7 +253,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a mobile application that requires push notifications to be sent to users' devices. Which AWS service should you use to send targeted push notifications based on user behavior?",
+    question:
+      "You are developing a mobile application that requires push notifications to be sent to users' devices. Which AWS service should you use to send targeted push notifications based on user behavior?",
     option1: "Amazon Pinpoint",
     option2: "Amazon SNS",
     option3: "Amazon SQS",
@@ -228,7 +262,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization is planning to build a serverless API backend for its mobile application. Which AWS service should you use to deploy and manage serverless APIs at scale?",
+    question:
+      "Your organization is planning to build a serverless API backend for its mobile application. Which AWS service should you use to deploy and manage serverless APIs at scale?",
     option1: "Amazon API Gateway",
     option2: "Amazon Cognito",
     option3: "AWS Lambda",
@@ -236,7 +271,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are developing a machine learning model that requires high-performance GPU instances for training. Which AWS service should you use to launch and manage GPU-accelerated instances in the cloud?",
+    question:
+      "You are developing a machine learning model that requires high-performance GPU instances for training. Which AWS service should you use to launch and manage GPU-accelerated instances in the cloud?",
     option1: "Amazon EC2",
     option2: "Amazon SageMaker",
     option3: "Amazon ECS",
@@ -260,7 +296,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What type of storage does Amazon EC2 provide for temporary data?",
+    question:
+      "What type of storage does Amazon EC2 provide for temporary data?",
     option1: "Elastic Block Store (EBS)",
     option2: "Instance Store",
     option3: "Amazon S3",
@@ -268,7 +305,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for scalable and highly available relational databases?",
+    question:
+      "What AWS service is used for scalable and highly available relational databases?",
     option1: "Amazon DynamoDB",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -292,7 +330,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Which AWS service allows you to run code without provisioning or managing servers?",
+    question:
+      "Which AWS service allows you to run code without provisioning or managing servers?",
     option1: "AWS Lambda",
     option2: "Amazon DynamoDB",
     option3: "Amazon EC2",
@@ -300,7 +339,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for deploying and managing containerized applications?",
+    question:
+      "What AWS service is used for deploying and managing containerized applications?",
     option1: "Amazon Elastic Beanstalk",
     option2: "Amazon CloudFront",
     option3: "Amazon CloudFormation",
@@ -308,7 +348,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Which AWS service is used for building and managing serverless applications?",
+    question:
+      "Which AWS service is used for building and managing serverless applications?",
     option1: "AWS Lambda",
     option2: "Amazon EC2",
     option3: "Amazon RDS",
@@ -324,7 +365,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is commonly used for identity federation and user authentication?",
+    question:
+      "What AWS service is commonly used for identity federation and user authentication?",
     option1: "Amazon Cognito",
     option2: "AWS IAM",
     option3: "Amazon API Gateway",
@@ -332,7 +374,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What service is used for deploying, managing, and scaling containerized applications?",
+    question:
+      "What service is used for deploying, managing, and scaling containerized applications?",
     option1: "Amazon EC2",
     option2: "Amazon ECS",
     option3: "Amazon S3",
@@ -340,7 +383,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for content delivery network (CDN) services?",
+    question:
+      "What AWS service is used for content delivery network (CDN) services?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon S3",
@@ -348,7 +392,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service provides a fully managed message queuing service?",
+    question:
+      "What AWS service provides a fully managed message queuing service?",
     option1: "Amazon SQS",
     option2: "Amazon SNS",
     option3: "Amazon RDS",
@@ -356,7 +401,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service provides a fully managed NoSQL database service?",
+    question:
+      "What AWS service provides a fully managed NoSQL database service?",
     option1: "Amazon RDS",
     option2: "Amazon DynamoDB",
     option3: "Amazon Redshift",
@@ -364,7 +410,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for automated provisioning of resources?",
+    question:
+      "What AWS service is used for automated provisioning of resources?",
     option1: "Amazon EC2",
     option2: "Amazon CloudFormation",
     option3: "Amazon S3",
@@ -380,7 +427,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "What AWS service provides a managed, highly available relational database service?",
+    question:
+      "What AWS service provides a managed, highly available relational database service?",
     option1: "Amazon RDS",
     option2: "Amazon DynamoDB",
     option3: "Amazon Redshift",
@@ -404,7 +452,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for application and API load balancing?",
+    question:
+      "What AWS service is used for application and API load balancing?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon ELB",
@@ -420,7 +469,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for distributing incoming application traffic?",
+    question:
+      "What AWS service is used for distributing incoming application traffic?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon ELB",
@@ -428,7 +478,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "What AWS service is used for managing containerized applications?",
+    question:
+      "What AWS service is used for managing containerized applications?",
     option1: "Amazon EC2",
     option2: "Amazon ECS",
     option3: "Amazon S3",
@@ -436,7 +487,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for real-time messaging and notifications?",
+    question:
+      "What AWS service is used for real-time messaging and notifications?",
     option1: "Amazon SQS",
     option2: "Amazon SNS",
     option3: "Amazon RDS",
@@ -460,7 +512,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "What AWS service is used for deploying and managing containerized applications?",
+    question:
+      "What AWS service is used for deploying and managing containerized applications?",
     option1: "Amazon EC2",
     option2: "Amazon ECS",
     option3: "Amazon S3",
@@ -468,7 +521,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for application and API load balancing?",
+    question:
+      "What AWS service is used for application and API load balancing?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon ELB",
@@ -484,7 +538,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for distributing incoming application traffic?",
+    question:
+      "What AWS service is used for distributing incoming application traffic?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon ELB",
@@ -492,7 +547,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "What AWS service is used for managing containerized applications?",
+    question:
+      "What AWS service is used for managing containerized applications?",
     option1: "Amazon EC2",
     option2: "Amazon ECS",
     option3: "Amazon S3",
@@ -500,7 +556,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for real-time messaging and notifications?",
+    question:
+      "What AWS service is used for real-time messaging and notifications?",
     option1: "Amazon SQS",
     option2: "Amazon SNS",
     option3: "Amazon RDS",
@@ -540,7 +597,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for automated infrastructure provisioning?",
+    question:
+      "What AWS service is used for automated infrastructure provisioning?",
     option1: "Amazon EC2",
     option2: "Amazon CloudFormation",
     option3: "AWS Lambda",
@@ -604,7 +662,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for continuous integration and continuous deployment (CI/CD)?",
+    question:
+      "What AWS service is used for continuous integration and continuous deployment (CI/CD)?",
     option1: "Amazon CodePipeline",
     option2: "Amazon S3",
     option3: "AWS Lambda",
@@ -620,7 +679,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for internet of things (IoT) device management?",
+    question:
+      "What AWS service is used for internet of things (IoT) device management?",
     option1: "Amazon S3",
     option2: "Amazon IoT Core",
     option3: "Amazon RDS",
@@ -668,7 +728,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for scalable, serverless data analysis?",
+    question:
+      "What AWS service is used for scalable, serverless data analysis?",
     option1: "Amazon Redshift",
     option2: "Amazon Athena",
     option3: "Amazon RDS",
@@ -683,7 +744,7 @@ export const data = [
     option4: "Amazon S3",
     ans: 2,
   },
-   {
+  {
     question: "What AWS service is used for serverless backend development?",
     option1: "Amazon API Gateway",
     option2: "Amazon RDS",
@@ -716,7 +777,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for serverless application orchestration?",
+    question:
+      "What AWS service is used for serverless application orchestration?",
     option1: "Amazon SQS",
     option2: "Amazon SWF",
     option3: "AWS Step Functions",
@@ -732,7 +794,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for serverless image and video processing?",
+    question:
+      "What AWS service is used for serverless image and video processing?",
     option1: "Amazon Rekognition",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -772,7 +835,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for serverless application deployment and scaling?",
+    question:
+      "What AWS service is used for serverless application deployment and scaling?",
     option1: "Amazon EC2",
     option2: "Amazon Elastic Beanstalk",
     option3: "AWS Lambda",
@@ -845,7 +909,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "What AWS service is used for virtual private cloud (VPC) networking?",
+    question:
+      "What AWS service is used for virtual private cloud (VPC) networking?",
     option1: "Amazon VPC",
     option2: "Amazon Route 53",
     option3: "Amazon S3",
@@ -893,7 +958,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for real-time application performance monitoring?",
+    question:
+      "What AWS service is used for real-time application performance monitoring?",
     option1: "Amazon CloudWatch",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -917,7 +983,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for continuous integration and delivery (CI/CD)?",
+    question:
+      "What AWS service is used for continuous integration and delivery (CI/CD)?",
     option1: "AWS CodePipeline",
     option2: "Amazon S3",
     option3: "Amazon RDS",
@@ -933,7 +1000,7 @@ export const data = [
     ans: 1,
   },
   // Add more questions here...
-{
+  {
     question: "What AWS service is used for serverless data analysis?",
     option1: "Amazon Redshift",
     option2: "Amazon Athena",
@@ -942,7 +1009,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for object storage with granular access control?",
+    question:
+      "What AWS service is used for object storage with granular access control?",
     option1: "Amazon S3",
     option2: "Amazon EBS",
     option3: "Amazon RDS",
@@ -974,7 +1042,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for orchestrating serverless workflows?",
+    question:
+      "What AWS service is used for orchestrating serverless workflows?",
     option1: "AWS Step Functions",
     option2: "Amazon SWF",
     option3: "Amazon RDS",
@@ -990,7 +1059,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for deploying and managing containerized applications?",
+    question:
+      "What AWS service is used for deploying and managing containerized applications?",
     option1: "Amazon ECR",
     option2: "Amazon ECS",
     option3: "Amazon S3",
@@ -998,7 +1068,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for managing and automating infrastructure?",
+    question:
+      "What AWS service is used for managing and automating infrastructure?",
     option1: "Amazon EC2",
     option2: "Amazon CloudFormation",
     option3: "Amazon S3",
@@ -1029,7 +1100,7 @@ export const data = [
     option4: "Amazon DynamoDB",
     ans: 1,
   },
-   
+
   {
     question: "What AWS service is used for serverless function execution?",
     option1: "Amazon Lambda",
@@ -1047,7 +1118,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for object storage optimized for frequent access?",
+    question:
+      "What AWS service is used for object storage optimized for frequent access?",
     option1: "Amazon S3",
     option2: "Amazon Glacier",
     option3: "Amazon EFS",
@@ -1079,7 +1151,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for content delivery network (CDN) services?",
+    question:
+      "What AWS service is used for content delivery network (CDN) services?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon S3",
@@ -1087,7 +1160,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "What AWS service is used for real-time data processing and analytics?",
+    question:
+      "What AWS service is used for real-time data processing and analytics?",
     option1: "Amazon Kinesis",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1095,7 +1169,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for scalable and fully managed database migrations?",
+    question:
+      "What AWS service is used for scalable and fully managed database migrations?",
     option1: "AWS DMS",
     option2: "AWS SCT",
     option3: "Amazon S3",
@@ -1103,7 +1178,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for automated infrastructure provisioning and management?",
+    question:
+      "What AWS service is used for automated infrastructure provisioning and management?",
     option1: "Amazon EC2",
     option2: "Amazon CloudFormation",
     option3: "Amazon S3",
@@ -1112,8 +1188,9 @@ export const data = [
   },
   // Add more questions here...
 
-{
-    question: "What AWS service is used for serverless container orchestration?",
+  {
+    question:
+      "What AWS service is used for serverless container orchestration?",
     option1: "Amazon ECS",
     option2: "Amazon EKS",
     option3: "Amazon S3",
@@ -1185,7 +1262,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "What AWS service is used for object storage optimized for infrequent access?",
+    question:
+      "What AWS service is used for object storage optimized for infrequent access?",
     option1: "Amazon S3 Glacier",
     option2: "Amazon S3",
     option3: "Amazon EBS",
@@ -1193,8 +1271,9 @@ export const data = [
     ans: 1,
   },
   // Add more questions here...
-        {
-    question: "You are tasked with setting up a scalable and fault-tolerant web application. Which AWS service should you use to deploy your application code without managing the underlying infrastructure?",
+  {
+    question:
+      "You are tasked with setting up a scalable and fault-tolerant web application. Which AWS service should you use to deploy your application code without managing the underlying infrastructure?",
     option1: "Amazon EC2",
     option2: "Amazon Elastic Beanstalk",
     option3: "AWS Lambda",
@@ -1202,7 +1281,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your company wants to build a data lake solution to store and analyze large volumes of data. Which AWS service should you use for cost-effective storage with strong durability and availability?",
+    question:
+      "Your company wants to build a data lake solution to store and analyze large volumes of data. Which AWS service should you use for cost-effective storage with strong durability and availability?",
     option1: "Amazon S3",
     option2: "Amazon Redshift",
     option3: "Amazon RDS",
@@ -1210,7 +1290,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team needs to handle real-time streaming data from IoT devices for analytics and monitoring. Which AWS service should you use to ingest, buffer, and process this data?",
+    question:
+      "Your team needs to handle real-time streaming data from IoT devices for analytics and monitoring. Which AWS service should you use to ingest, buffer, and process this data?",
     option1: "Amazon Kinesis",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1218,7 +1299,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You want to implement a serverless architecture for processing images uploaded by users. Which AWS service can execute code in response to image uploads and automatically scale based on demand?",
+    question:
+      "You want to implement a serverless architecture for processing images uploaded by users. Which AWS service can execute code in response to image uploads and automatically scale based on demand?",
     option1: "Amazon EC2",
     option2: "Amazon S3",
     option3: "AWS Lambda",
@@ -1226,7 +1308,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "Your application requires a scalable and fully managed relational database service. Which AWS service should you use to automate database provisioning, patching, and backups?",
+    question:
+      "Your application requires a scalable and fully managed relational database service. Which AWS service should you use to automate database provisioning, patching, and backups?",
     option1: "Amazon Redshift",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1234,15 +1317,17 @@ export const data = [
     ans: 2,
   },
   {
-    question: "You need to build a serverless API backend for a mobile application. Which AWS service provides API management, authentication, and authorization capabilities?",
+    question:
+      "You need to build a serverless API backend for a mobile application. Which AWS service provides API management, authentication, and authorization capabilities?",
     option1: "Amazon API Gateway",
     option2: "Amazon RDS",
     option3: "Amazon S3",
     option4: "AWS Lambda",
     ans: 1,
   },
-        {
-    question: "Your company is planning to deploy a new web application that requires real-time updates and notifications to users. Which AWS service should you use to deliver messages to distributed systems and services?",
+  {
+    question:
+      "Your company is planning to deploy a new web application that requires real-time updates and notifications to users. Which AWS service should you use to deliver messages to distributed systems and services?",
     option1: "Amazon SNS",
     option2: "Amazon SQS",
     option3: "Amazon Route 53",
@@ -1250,7 +1335,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is working on a project that involves analyzing large volumes of log data in real-time to identify anomalies and trends. Which AWS service should you use to collect, monitor, and store log data from multiple sources?",
+    question:
+      "Your team is working on a project that involves analyzing large volumes of log data in real-time to identify anomalies and trends. Which AWS service should you use to collect, monitor, and store log data from multiple sources?",
     option1: "Amazon CloudWatch",
     option2: "Amazon S3",
     option3: "Amazon Redshift",
@@ -1258,7 +1344,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are tasked with building a global application that requires low-latency access to content for users around the world. Which AWS service should you use to improve the performance and availability of your application?",
+    question:
+      "You are tasked with building a global application that requires low-latency access to content for users around the world. Which AWS service should you use to improve the performance and availability of your application?",
     option1: "Amazon Route 53",
     option2: "Amazon CloudFront",
     option3: "Amazon S3",
@@ -1266,7 +1353,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your organization wants to implement a disaster recovery solution for its critical workloads. Which AWS service should you use to automate the replication of data across AWS regions and ensure high availability?",
+    question:
+      "Your organization wants to implement a disaster recovery solution for its critical workloads. Which AWS service should you use to automate the replication of data across AWS regions and ensure high availability?",
     option1: "Amazon Route 53",
     option2: "Amazon S3",
     option3: "AWS Backup",
@@ -1274,7 +1362,8 @@ export const data = [
     ans: 3,
   },
   {
-    question: "You need to develop a serverless application that processes data from IoT devices in real-time. Which AWS service should you use to orchestrate multiple AWS services into serverless workflows?",
+    question:
+      "You need to develop a serverless application that processes data from IoT devices in real-time. Which AWS service should you use to orchestrate multiple AWS services into serverless workflows?",
     option1: "AWS Step Functions",
     option2: "Amazon S3",
     option3: "Amazon RDS",
@@ -1282,15 +1371,17 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is building a mobile application that requires user authentication and access control. Which AWS service should you use to add user sign-up, sign-in, and access control features to your application?",
+    question:
+      "Your team is building a mobile application that requires user authentication and access control. Which AWS service should you use to add user sign-up, sign-in, and access control features to your application?",
     option1: "Amazon Cognito",
     option2: "AWS IAM",
     option3: "Amazon S3",
     option4: "Amazon DynamoDB",
     ans: 1,
   },
-       {
-    question: "Your company is developing a new e-commerce platform that requires secure payment processing. Which AWS service should you use to securely transmit sensitive payment information between your application and payment gateways?",
+  {
+    question:
+      "Your company is developing a new e-commerce platform that requires secure payment processing. Which AWS service should you use to securely transmit sensitive payment information between your application and payment gateways?",
     option1: "Amazon RDS",
     option2: "Amazon S3",
     option3: "Amazon VPC",
@@ -1298,7 +1389,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "Your team is building a real-time chat application that needs to handle millions of concurrent connections. Which AWS service should you use to support real-time communication between clients and servers?",
+    question:
+      "Your team is building a real-time chat application that needs to handle millions of concurrent connections. Which AWS service should you use to support real-time communication between clients and servers?",
     option1: "Amazon SNS",
     option2: "Amazon EC2",
     option3: "Amazon API Gateway",
@@ -1306,7 +1398,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "You are developing a media streaming application that requires low-latency delivery of video content to viewers worldwide. Which AWS service should you use to deliver high-quality video streams with low latency and high scalability?",
+    question:
+      "You are developing a media streaming application that requires low-latency delivery of video content to viewers worldwide. Which AWS service should you use to deliver high-quality video streams with low latency and high scalability?",
     option1: "Amazon Kinesis Video Streams",
     option2: "Amazon CloudFront",
     option3: "Amazon S3",
@@ -1314,7 +1407,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your organization needs to migrate an existing on-premises database to the cloud. Which AWS service should you use to securely transfer large amounts of data to AWS?",
+    question:
+      "Your organization needs to migrate an existing on-premises database to the cloud. Which AWS service should you use to securely transfer large amounts of data to AWS?",
     option1: "AWS Snowball",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1322,7 +1416,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a mobile gaming application that requires real-time leaderboards and player rankings. Which AWS service should you use to store and retrieve dynamic data with single-digit millisecond latency?",
+    question:
+      "You are designing a mobile gaming application that requires real-time leaderboards and player rankings. Which AWS service should you use to store and retrieve dynamic data with single-digit millisecond latency?",
     option1: "Amazon DynamoDB",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1330,7 +1425,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is developing a social media platform that requires user authentication and authorization. Which AWS service should you use to manage user identities and control access to resources?",
+    question:
+      "Your team is developing a social media platform that requires user authentication and authorization. Which AWS service should you use to manage user identities and control access to resources?",
     option1: "AWS IAM",
     option2: "Amazon Cognito",
     option3: "Amazon S3",
@@ -1338,7 +1434,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "Your company is launching a new marketing campaign that requires personalized email communication with customers. Which AWS service should you use to send personalized marketing emails to a large number of recipients?",
+    question:
+      "Your company is launching a new marketing campaign that requires personalized email communication with customers. Which AWS service should you use to send personalized marketing emails to a large number of recipients?",
     option1: "Amazon SNS",
     option2: "Amazon SES",
     option3: "Amazon SQS",
@@ -1346,7 +1443,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "You are developing a serverless application that requires periodic execution of tasks on a fixed schedule. Which AWS service should you use to trigger AWS Lambda functions at specified intervals?",
+    question:
+      "You are developing a serverless application that requires periodic execution of tasks on a fixed schedule. Which AWS service should you use to trigger AWS Lambda functions at specified intervals?",
     option1: "Amazon EventBridge",
     option2: "Amazon SNS",
     option3: "Amazon SQS",
@@ -1354,7 +1452,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "Your organization needs to store and manage sensitive data such as customer records and financial information. Which AWS service should you use to encrypt data at rest and in transit?",
+    question:
+      "Your organization needs to store and manage sensitive data such as customer records and financial information. Which AWS service should you use to encrypt data at rest and in transit?",
     option1: "Amazon Macie",
     option2: "Amazon GuardDuty",
     option3: "AWS Secrets Manager",
@@ -1362,7 +1461,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "You are building a data analytics platform that requires real-time processing of streaming data from multiple sources. Which AWS service should you use to process and analyze streaming data in real-time?",
+    question:
+      "You are building a data analytics platform that requires real-time processing of streaming data from multiple sources. Which AWS service should you use to process and analyze streaming data in real-time?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon Athena",
@@ -1370,7 +1470,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is developing a serverless application that requires user authentication and authorization. Which AWS service should you use to authenticate users and control access to your application's resources?",
+    question:
+      "Your team is developing a serverless application that requires user authentication and authorization. Which AWS service should you use to authenticate users and control access to your application's resources?",
     option1: "Amazon Cognito",
     option2: "Amazon RDS",
     option3: "Amazon S3",
@@ -1378,7 +1479,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are building a financial application that requires low-latency access to real-time market data. Which AWS service should you use to store and retrieve real-time market data with sub-millisecond latency?",
+    question:
+      "You are building a financial application that requires low-latency access to real-time market data. Which AWS service should you use to store and retrieve real-time market data with sub-millisecond latency?",
     option1: "Amazon RDS",
     option2: "Amazon Redshift",
     option3: "Amazon DynamoDB",
@@ -1386,7 +1488,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "Your organization is planning to migrate its on-premises infrastructure to the cloud. Which AWS service should you use to create a secure and isolated network environment in the cloud?",
+    question:
+      "Your organization is planning to migrate its on-premises infrastructure to the cloud. Which AWS service should you use to create a secure and isolated network environment in the cloud?",
     option1: "Amazon VPC",
     option2: "Amazon Route 53",
     option3: "Amazon S3",
@@ -1394,7 +1497,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "You are designing a machine learning application that requires scalable and cost-effective GPU resources for training models. Which AWS service should you use to launch and manage GPU-accelerated instances in the cloud?",
+    question:
+      "You are designing a machine learning application that requires scalable and cost-effective GPU resources for training models. Which AWS service should you use to launch and manage GPU-accelerated instances in the cloud?",
     option1: "Amazon EC2",
     option2: "Amazon S3",
     option3: "Amazon EKS",
@@ -1402,7 +1506,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is developing a mobile application that requires push notifications to be sent to users' devices. Which AWS service should you use to send personalized push notifications to mobile devices?",
+    question:
+      "Your team is developing a mobile application that requires push notifications to be sent to users' devices. Which AWS service should you use to send personalized push notifications to mobile devices?",
     option1: "Amazon SNS",
     option2: "Amazon SQS",
     option3: "Amazon SES",
@@ -1410,7 +1515,8 @@ export const data = [
     ans: 4,
   },
   {
-    question: "You are building a data processing pipeline that requires scalable and fault-tolerant storage. Which AWS service should you use to store large volumes of data and retrieve it quickly for processing?",
+    question:
+      "You are building a data processing pipeline that requires scalable and fault-tolerant storage. Which AWS service should you use to store large volumes of data and retrieve it quickly for processing?",
     option1: "Amazon S3",
     option2: "Amazon RDS",
     option3: "Amazon DynamoDB",
@@ -1418,7 +1524,8 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your organization is planning to deploy a microservices architecture for its new cloud-based application. Which AWS service should you use to manage and orchestrate containers at scale?",
+    question:
+      "Your organization is planning to deploy a microservices architecture for its new cloud-based application. Which AWS service should you use to manage and orchestrate containers at scale?",
     option1: "Amazon ECS",
     option2: "Amazon EKS",
     option3: "Amazon RDS",
@@ -1426,7 +1533,8 @@ export const data = [
     ans: 2,
   },
   {
-    question: "You are developing a web application that requires real-time analytics on user interactions. Which AWS service should you use to collect, process, and analyze streaming data from your application?",
+    question:
+      "You are developing a web application that requires real-time analytics on user interactions. Which AWS service should you use to collect, process, and analyze streaming data from your application?",
     option1: "Amazon Kinesis",
     option2: "Amazon Redshift",
     option3: "Amazon Athena",
@@ -1434,15 +1542,14 @@ export const data = [
     ans: 1,
   },
   {
-    question: "Your team is building a serverless application that requires automated scaling based on demand. Which AWS service should you use to automatically provision and manage compute resources without server management?",
+    question:
+      "Your team is building a serverless application that requires automated scaling based on demand. Which AWS service should you use to automatically provision and manage compute resources without server management?",
     option1: "Amazon EC2",
     option2: "Amazon EKS",
     option3: "AWS Lambda",
     option4: "Amazon S3",
     ans: 3,
-  }
+  },
 
   // Continue adding more questions...
 ];
-
-
