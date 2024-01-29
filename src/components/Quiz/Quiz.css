@@ -42,8 +42,12 @@
 }
 
 .container button {
+  /* Remove fixed width and max-width */
   width: 100%;
-  max-width: 250px;
+  max-width: none;
+  /* Adjust padding for centering text */
+  padding: 0;
+  /* Keep other styles */
   height: 65px;
   background-image: linear-gradient(
     90deg,
@@ -76,6 +80,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 .container .index {
   margin: auto;
