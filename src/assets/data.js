@@ -48,3 +48,5 @@ export const data = [
     ans: 2,
   },
 ];
+
+
