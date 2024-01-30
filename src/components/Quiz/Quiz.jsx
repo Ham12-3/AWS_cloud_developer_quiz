@@ -95,7 +95,7 @@ const Quiz = ({ userName }) => {
           {name !== "" && (
             <>
               <div className="head">
-                <h1>Quiz App {name} {data.length}</h1>
+                <h1>Quiz App  {data.length} Questions</h1>
                 <h1>Score: {score} </h1>
               </div>
 
