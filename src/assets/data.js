@@ -8,7 +8,7 @@ export const data =[
       "C": "AWS Secrets Manager",
       "D": "AWS Directory Service"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "An application requires real-time updates to a web interface based on changes in a DynamoDB table. Which AWS service or feature is best suited for achieving this?",
@@ -18,7 +18,7 @@ export const data =[
       "C": "AWS Lambda",
       "D": "AWS Step Functions"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "A developer needs to ensure that code deployed to AWS Lambda functions is automatically tested before deployment. Which AWS service or tool should the developer use to achieve this?",
@@ -28,7 +28,7 @@ export const data =[
       "C": "AWS CodePipeline",
       "D": "AWS CodeBuild"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to store large amounts of unstructured data with low latency access. Which AWS service is the best fit for this requirement?",
@@ -38,7 +38,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to deploy a Dockerized application to AWS while maintaining control over the underlying infrastructure. Which AWS service should the developer use?",
@@ -48,7 +48,7 @@ export const data =[
       "C": "Amazon EKS",
       "D": "AWS Lambda"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application running on EC2 instances requires a centralized logging solution. Which AWS service is best suited for this requirement?",
@@ -58,7 +58,7 @@ export const data =[
       "C": "Amazon Elasticsearch Service",
       "D": "AWS X-Ray"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer wants to ensure that AWS Lambda functions can access resources within a VPC. Which configuration should the developer use?",
@@ -68,7 +68,7 @@ export const data =[
       "C": "Public subnet with a VPC endpoint",
       "D": "Private subnet with a VPC peering connection"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "An application requires long-term storage of relational data with complex queries. Which AWS service is best suited for this requirement?",
@@ -78,7 +78,7 @@ export const data =[
       "C": "Amazon RDS",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer wants to ensure that EC2 instances in an Auto Scaling group can automatically scale based on CPU utilization. Which AWS service should the developer configure?",
@@ -88,7 +88,7 @@ export const data =[
       "C": "AWS Lambda",
       "D": "Amazon SNS"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to send notifications to users via email and SMS. Which AWS service should the developer use to achieve this?",
@@ -98,7 +98,7 @@ export const data =[
       "C": "Amazon SQS",
       "D": "AWS Lambda"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to ensure that a containerized application running on AWS ECS can be accessed securely from the internet. Which AWS service should the developer use?",
@@ -108,7 +108,7 @@ export const data =[
       "C": "AWS VPN",
       "D": "Amazon VPC"
     },
-    "correct_answer": "D"
+    "ans": "D"
   },
   {
     "question": "An application requires real-time streaming data processing with low-latency. Which AWS service is most suitable for this requirement?",
@@ -118,7 +118,7 @@ export const data =[
       "C": "Amazon SNS",
       "D": "Amazon MQ"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to trigger an AWS Lambda function whenever an object is uploaded to an S3 bucket. Which AWS service or feature should the developer use to achieve this?",
@@ -128,7 +128,7 @@ export const data =[
       "C": "Amazon EventBridge",
       "D": "AWS Config"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to provide users with a secure way to upload files directly to an S3 bucket from a web browser. Which AWS service should the developer use?",
@@ -138,7 +138,7 @@ export const data =[
       "C": "Amazon CloudFront",
       "D": "Amazon S3 presigned URLs"
     },
-    "correct_answer": "D"
+    "ans": "D"
   },
   {
     "question": "A developer needs to deploy a highly available web application on AWS. Which AWS service provides managed load balancing for distributing incoming application traffic?",
@@ -148,7 +148,7 @@ export const data =[
       "C": "Amazon ELB",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to ensure that data stored in an S3 bucket is encrypted at rest. Which encryption option should the developer enable?",
@@ -158,7 +158,7 @@ export const data =[
       "C": "Client-Side Encryption with AWS SDK",
       "D": "Client-Side Encryption with AWS CLI"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "A developer wants to monitor the health of EC2 instances and trigger automated actions based on predefined thresholds. Which AWS service provides this capability?",
@@ -168,7 +168,7 @@ export const data =[
       "C": "AWS Health",
       "D": "AWS Trusted Advisor"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process and analyze large datasets in real-time. Which AWS service is best suited for this requirement?",
@@ -178,7 +178,7 @@ export const data =[
       "C": "Amazon Kinesis",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer wants to deploy a containerized application to AWS while minimizing management overhead. Which AWS service should the developer use?",
@@ -188,7 +188,7 @@ export const data =[
       "C": "Amazon EKS",
       "D": "Amazon Lightsail"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "An application needs to trigger an AWS Lambda function at regular intervals. Which AWS service should the developer use to schedule the function invocation?",
@@ -198,7 +198,7 @@ export const data =[
       "C": "Amazon SQS",
       "D": "AWS Step Functions"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to deploy a scalable web application on AWS with built-in content delivery and edge caching. Which AWS service should the developer use?",
@@ -208,7 +208,7 @@ export const data =[
       "C": "Amazon CloudFront",
       "D": "Amazon Route 53"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to invoke a Lambda function synchronously over HTTPS. Which AWS service should the developer use to create the HTTPS endpoint?",
@@ -218,7 +218,7 @@ export const data =[
       "C": "Amazon Route 53",
       "D": "AWS AppSync"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to implement automated provisioning and management of AWS resources. Which AWS service provides infrastructure as code capabilities?",
@@ -228,7 +228,7 @@ export const data =[
       "C": "Amazon Elastic Beanstalk",
       "D": "AWS CodeDeploy"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application requires a fully managed SQL database service with automated backups, scaling, and high availability. Which AWS service should the developer use?",
@@ -238,7 +238,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "A developer wants to deploy a web application to AWS without managing the underlying infrastructure. Which AWS service provides a fully managed platform for deploying web applications?",
@@ -248,7 +248,7 @@ export const data =[
       "C": "Amazon Elastic Beanstalk",
       "D": "Amazon Lightsail"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application requires a durable and scalable object storage solution with low latency access. Which AWS service should the developer use?",
@@ -258,7 +258,7 @@ export const data =[
       "C": "Amazon S3",
       "D": "Amazon Glacier"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to deploy a highly available relational database service on AWS with automated failover and backups. Which AWS service should the developer use?",
@@ -268,7 +268,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process and analyze streaming data from various sources in real-time. Which AWS service is best suited for this requirement?",
@@ -278,7 +278,7 @@ export const data =[
       "C": "Amazon Kinesis",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer wants to ensure that web applications deployed on AWS can handle sudden traffic spikes without manual intervention. Which AWS service should the developer use?",
@@ -288,7 +288,7 @@ export const data =[
       "C": "Amazon ELB",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to store sensitive data in a highly secure manner on AWS. Which AWS service provides centralized management of encryption keys?",
@@ -298,7 +298,7 @@ export const data =[
       "C": "AWS Secrets Manager",
       "D": "AWS IAM"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to ensure that a web application hosted on AWS is accessible via HTTPS. Which AWS service should the developer use to configure SSL/TLS certificates?",
@@ -308,7 +308,7 @@ export const data =[
       "C": "AWS Key Management Service (KMS)",
       "D": "AWS WAF"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process messages asynchronously and ensure that each message is processed exactly once. Which AWS service is best suited for this requirement?",
@@ -318,7 +318,7 @@ export const data =[
       "C": "Amazon MQ",
       "D": "Amazon Kinesis"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to deploy a scalable, serverless application on AWS with event-driven architecture. Which AWS service should the developer use?",
@@ -328,7 +328,7 @@ export const data =[
       "C": "Amazon ECS",
       "D": "Amazon RDS"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to authenticate and authorize users securely on AWS. Which AWS service provides identity federation and single sign-on capabilities?",
@@ -338,7 +338,7 @@ export const data =[
       "C": "AWS Directory Service",
       "D": "AWS Organizations"
     },
-    "correct_answer": "B"
+    "ans": "B"
   },
   {
     "question": "A developer needs to monitor and debug applications running on AWS with distributed tracing and performance analysis. Which AWS service should the developer use?",
@@ -348,7 +348,7 @@ export const data =[
       "C": "AWS X-Ray",
       "D": "AWS CloudTrail"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application requires a managed NoSQL database service with low latency access and automated scaling. Which AWS service should the developer use?",
@@ -358,7 +358,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Aurora"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to automate the deployment of code changes to AWS while maintaining control over the release process. Which AWS service provides continuous integration and continuous deployment capabilities?",
@@ -368,7 +368,7 @@ export const data =[
       "C": "AWS CodeDeploy",
       "D": "AWS CodeBuild"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process large-scale data analytics with distributed queries and parallel processing. Which AWS service is best suited for this requirement?",
@@ -378,7 +378,7 @@ export const data =[
       "C": "Amazon EMR",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to store and retrieve large files in a scalable and cost-effective manner on AWS. Which AWS service should the developer use?",
@@ -388,7 +388,7 @@ export const data =[
       "C": "Amazon S3",
       "D": "Amazon Glacier"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to ensure that data is replicated across multiple AWS regions for disaster recovery. Which AWS service provides cross-region replication for data stored in S3 buckets?",
@@ -398,7 +398,7 @@ export const data =[
       "C": "Amazon S3 Cross-Region Replication",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to trigger a Lambda function in response to changes in an AWS service. Which AWS service provides event-driven architecture for triggering Lambda functions?",
@@ -408,7 +408,7 @@ export const data =[
       "C": "Amazon CloudWatch Events",
       "D": "Amazon SQS"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application requires a scalable message queue service for decoupling components and enabling asynchronous communication. Which AWS service is best suited for this requirement?",
@@ -418,7 +418,7 @@ export const data =[
       "C": "Amazon MQ",
       "D": "Amazon Kinesis"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to deploy a highly available relational database service on AWS with automated failover and backups. Which AWS service should the developer use?",
@@ -428,7 +428,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process and analyze streaming data from various sources in real-time. Which AWS service is best suited for this requirement?",
@@ -438,7 +438,7 @@ export const data =[
       "C": "Amazon Kinesis",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer wants to ensure that web applications deployed on AWS can handle sudden traffic spikes without manual intervention. Which AWS service should the developer use?",
@@ -448,7 +448,7 @@ export const data =[
       "C": "Amazon ELB",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to store sensitive data in a highly secure manner on AWS. Which AWS service provides centralized management of encryption keys?",
@@ -458,7 +458,7 @@ export const data =[
       "C": "AWS Secrets Manager",
       "D": "AWS IAM"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to monitor and debug applications running on AWS with distributed tracing and performance analysis. Which AWS service should the developer use?",
@@ -468,7 +468,7 @@ export const data =[
       "C": "AWS X-Ray",
       "D": "AWS CloudTrail"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application requires a managed NoSQL database service with low latency access and automated scaling. Which AWS service should the developer use?",
@@ -478,7 +478,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Aurora"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to automate the deployment of code changes to AWS while maintaining control over the release process. Which AWS service provides continuous integration and continuous deployment capabilities?",
@@ -488,7 +488,7 @@ export const data =[
       "C": "AWS CodeDeploy",
       "D": "AWS CodeBuild"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process large-scale data analytics with distributed queries and parallel processing. Which AWS service is best suited for this requirement?",
@@ -498,7 +498,7 @@ export const data =[
       "C": "Amazon EMR",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to store and retrieve large files in a scalable and cost-effective manner on AWS. Which AWS service should the developer use?",
@@ -508,7 +508,7 @@ export const data =[
       "C": "Amazon S3",
       "D": "Amazon Glacier"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to ensure that data is replicated across multiple AWS regions for disaster recovery. Which AWS service provides cross-region replication for data stored in S3 buckets?",
@@ -518,7 +518,7 @@ export const data =[
       "C": "Amazon S3 Cross-Region Replication",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to trigger a Lambda function in response to changes in an AWS service. Which AWS service provides event-driven architecture for triggering Lambda functions?",
@@ -528,7 +528,7 @@ export const data =[
       "C": "Amazon CloudWatch Events",
       "D": "Amazon SQS"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application requires a scalable message queue service for decoupling components and enabling asynchronous communication. Which AWS service is best suited for this requirement?",
@@ -538,7 +538,7 @@ export const data =[
       "C": "Amazon MQ",
       "D": "Amazon Kinesis"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to deploy a highly available relational database service on AWS with automated failover and backups. Which AWS service should the developer use?",
@@ -548,7 +548,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Redshift"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process and analyze streaming data from various sources in real-time. Which AWS service is best suited for this requirement?",
@@ -558,7 +558,7 @@ export const data =[
       "C": "Amazon Kinesis",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer wants to ensure that web applications deployed on AWS can handle sudden traffic spikes without manual intervention. Which AWS service should the developer use?",
@@ -568,7 +568,7 @@ export const data =[
       "C": "Amazon ELB",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to store sensitive data in a highly secure manner on AWS. Which AWS service provides centralized management of encryption keys?",
@@ -578,7 +578,7 @@ export const data =[
       "C": "AWS Secrets Manager",
       "D": "AWS IAM"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "A developer needs to monitor and debug applications running on AWS with distributed tracing and performance analysis. Which AWS service should the developer use?",
@@ -588,7 +588,7 @@ export const data =[
       "C": "AWS X-Ray",
       "D": "AWS CloudTrail"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application requires a managed NoSQL database service with low latency access and automated scaling. Which AWS service should the developer use?",
@@ -598,7 +598,7 @@ export const data =[
       "C": "Amazon DynamoDB",
       "D": "Amazon Aurora"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to automate the deployment of code changes to AWS while maintaining control over the release process. Which AWS service provides continuous integration and continuous deployment capabilities?",
@@ -608,7 +608,7 @@ export const data =[
       "C": "AWS CodeDeploy",
       "D": "AWS CodeBuild"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application needs to process large-scale data analytics with distributed queries and parallel processing. Which AWS service is best suited for this requirement?",
@@ -618,7 +618,7 @@ export const data =[
       "C": "Amazon EMR",
       "D": "Amazon RDS"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to store and retrieve large files in a scalable and cost-effective manner on AWS. Which AWS service should the developer use?",
@@ -628,7 +628,7 @@ export const data =[
       "C": "Amazon S3",
       "D": "Amazon Glacier"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "An application needs to ensure that data is replicated across multiple AWS regions for disaster recovery. Which AWS service provides cross-region replication for data stored in S3 buckets?",
@@ -638,7 +638,7 @@ export const data =[
       "C": "Amazon S3 Cross-Region Replication",
       "D": "Amazon CloudFront"
     },
-    "correct_answer": "C"
+    "ans": "C"
   },
   {
     "question": "A developer needs to trigger a Lambda function in response to changes in an AWS service. Which AWS service provides event-driven architecture for triggering Lambda functions?",
@@ -648,7 +648,7 @@ export const data =[
       "C": "Amazon CloudWatch Events",
       "D": "Amazon SQS"
     },
-    "correct_answer": "A"
+    "ans": "A"
   },
   {
     "question": "An application requires a scalable message queue service for decoupling components and enabling asynchronous communication. Which AWS service is best suited for this requirement?",
@@ -658,7 +658,7 @@ export const data =[
       "C": "Amazon MQ",
       "D": "Amazon Kinesis"
     },
-    "correct_answer": "A"
+    "ans": "A"
   }
 ,
 
