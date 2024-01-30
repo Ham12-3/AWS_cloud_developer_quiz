@@ -6,11 +6,11 @@ const ProgressBar = ({ index, total }) => {
 
   let color;
   if (progress < 50) {
-    color = "red";
+    color = "black";
   } else if (progress === 50) {
-    color = "darkyellow";
+    color = "black";
   } else {
-    color = "green";
+    color = "black";
   }
 
   return (
