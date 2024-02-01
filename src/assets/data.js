@@ -1,5 +1,13 @@
 export const data = [
-
+  {
+    "question":"A Developer at a company is working on a CloudFormation template to set up resources. Resources will be defined using code and provisioned based on certain conditions defined in the Conditions section. Which section of a CloudFormation template cannot be associated with Condition?",
+  "option1":"Parameters",
+   "option2":"Conditions",
+   "option3":"Resources",
+   "option4":"Output",
+  "ans":1
+  }
+  
 
   {
     "question": "Your company wants to optimize costs for an application that requires occasional compute resources but needs to be highly available. Which AWS service should you use?",
