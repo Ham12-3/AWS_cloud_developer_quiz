@@ -6,7 +6,7 @@ export const data = [
    "option3":"Resources",
    "option4":"Output",
   "ans":1
-  }
+  },
   
 
   {
